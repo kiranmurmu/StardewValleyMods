@@ -6,5 +6,5 @@
 	"UniqueID": "kiranmurmu.LuckyReclamationTrashCan",
 	"EntryDll": "LuckyReclamationTrashCan.dll",
 	"MinimumApiVersion": "3.10.1",
-	"UpdateKeys": []
+	"UpdateKeys": [ "Nexus:8971" ]
 }
