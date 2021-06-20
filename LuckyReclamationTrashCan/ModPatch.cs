@@ -9,7 +9,8 @@ namespace KiranMurmu.StardewValleyMods.LuckyReclamationTrashCan
     /// <param name="__result">The return value.</param>
     public static void After_getTrashReclamationPrice(ref int __result)
     {
-      __result = (int)(__result / (double)(0.321 - (double)Game1.player.LuckLevel * 0.05 - Game1.player.DailyLuck));
+      double luk = Game1.player.DailyLuck * 100.0 + Game1.player.LuckLevel;
+      __result = (int)(__result / (double)(0.75 - (luk > 10.0 ? 10.0 : luk < -10.0 ? -10.0 : luk) * 0.05));
     }
   }
 }
